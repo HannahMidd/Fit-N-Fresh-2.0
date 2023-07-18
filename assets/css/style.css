@@ -137,13 +137,19 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 100%; /* Set the width to 100% */
 }
 
-#motivQuotes1 > h4 {
+#motivQuotes1 > .quote-wrapper {
+    /* Add wrapper element */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#motivQuotes1 > .quote-wrapper > h4 {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-     border: solid 2px var(--spinach);
+    padding: 5px;
+    border: solid 2px var(--spinach);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -151,10 +157,16 @@ form {
     -o-border-radius: 2px;
 }
 
-#motivQuotes2 > h4 {
+#motivQuotes2 > .quote-wrapper {
+    /* Add wrapper element */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#motivQuotes2 > .quote-wrapper > h4 {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 5px;
-     border: solid 2px var(--spinach);
+    border: solid 2px var(--spinach);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -167,27 +179,16 @@ form {
     color: var(--spinach);
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
     padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+    width: 100%; /* Set the width to 100% */
 }
 
-/* Applies to footer */
-/* footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 15px;
-    color: var(--spinach);
-    border: solid 2px var(--spinach);
-    margin-left: 10px;
-    margin-right: 10px;
-} */
+
+
+
 
 .unhideRecipeInfo {
     display: none;
