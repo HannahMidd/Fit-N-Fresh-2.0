@@ -7,13 +7,12 @@
 }
 /* Applies to entire main section */
 body {
-    background-image: url('../images/fruittty.avif');
-    background-size: 100% auto; /* Stretch horizontally, maintain aspect ratio vertically */
-    background-repeat: repeat-x; /* Repeat only horizontally */
-    background-position: top left; /* Position the image at the top left */
+    background-image: url('../images/fruittty.avif'); /* First image */
+    background-size: cover; /* Cover the entire background area */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
     background-attachment: fixed; /* Fix the background image to the viewport */
 }
-
 /* Applies to header color and size */
 .header {
     background-color: rgba(255, 255, 255, 0.9);
