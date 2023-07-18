@@ -1,27 +1,25 @@
 :root {
-    --lettuce: #b5ffe1;
-    --leaf: #93e5ab;
-    --grass: #65b891;
-    --guava: #4e878c;
-    --spinach: #cf6d1c;
+    --lettuce: #662613;
+    --leaf: #8f301f;
+    --grass: #681717;
+    --guava: #d19b5d;
+    --spinach: #d89259;
 }
 /* Applies to entire main section */
 body {
-  background-image: url("../images/fruittty.avif");
-  background-size: 100% auto; /* Stretch horizontally, maintain aspect ratio vertically */
-  background-repeat: repeat-x; /* Repeat only horizontally */
-  background-position: top left; /* Position the image at the top left */
-  background-attachment: fixed; /* Fix the background image to the viewport */
+    background-image: url('../images/fruittty.avif');
+    background-size: 100% auto; /* Stretch horizontally, maintain aspect ratio vertically */
+    background-repeat: repeat-x; /* Repeat only horizontally */
+    background-position: top left; /* Position the image at the top left */
+    background-attachment: fixed; /* Fix the background image to the viewport */
 }
-
-
 
 /* Applies to header color and size */
 .header {
     background-color: rgba(255, 255, 255, 0.9);
     color: var(--spinach);
-    height: 110px;
-    border: solid 2px var(--spinach);
+    height: 75px;
+    border: solid 4px var(--spinach);
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -30,7 +28,8 @@ body {
     position: relative;
     top: -80px;
     left: 180px;
-    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     color: var(--guava);
 }
 
@@ -40,8 +39,9 @@ body {
     flex-direction: row;
     justify-content: end;
     position: relative;
-    top: -100px;
+    top: -50px;
     margin: 10px;
+    padding-right: 15px;
 }
 
 /* Applies to nav bar items */
@@ -53,9 +53,11 @@ body {
 
 /* Applies to logo in top left  */
 #logo {
-    width: 190px;
+    width: auto;
     padding: 5px;
-    height: 100px;
+    padding-top: 10px;
+    padding-left: 25px;
+    height: 50px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -136,13 +138,13 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+
 }
 
-#motivQuotes1 > h3 {
+#motivQuotes1 > h4 {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 5px;
-    border: solid 3px black;
+    padding: 10px;
+     border: solid 2px var(--spinach);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -150,10 +152,10 @@ form {
     -o-border-radius: 2px;
 }
 
-#motivQuotes2 > h3 {
+#motivQuotes2 > h4 {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 5px;
-    border: solid 3px black;
+     border: solid 2px var(--spinach);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -176,7 +178,7 @@ form {
 }
 
 /* Applies to footer */
-footer {
+/* footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,7 +188,7 @@ footer {
     border: solid 2px var(--spinach);
     margin-left: 10px;
     margin-right: 10px;
-}
+} */
 
 .unhideRecipeInfo {
     display: none;
@@ -198,12 +200,12 @@ footer {
 
 #workout {
     background-color: #00241b;
-    color: #65b891;
+    color: var(--guava);
 }
 
 #recipeCard {
     background-color: #00241b;
-    color: #65b891;
+    color: var(--guava);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,7 +218,7 @@ footer {
 
 #workoutResults {
     background-color: #00241b;
-    color: #65b891;
+    color: var(--guava);
     display: flex;
     flex-direction: column;
     align-items: center;
