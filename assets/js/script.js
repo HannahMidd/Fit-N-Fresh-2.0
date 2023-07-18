@@ -1,9 +1,3 @@
-// Hide the workoutResults section on page load
-window.addEventListener('load', function () {
-    let workoutResults = document.getElementById('workoutResults');
-    workoutResults.style.display = 'none';
-});
-
 // Creates an empty array for the random workouts
 let randomwrkout = [];
 const apiKey = 'b5a440c4d4msh54112a87c5e9245p18176fjsnfa9cc2dad087';
