@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fit -N- Fresh</title>
+  <!-- Google Font CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- JQuery CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!--  ---------------Header and Nav bar -------- -->
+  <header class="header">
+    <img id="logo" src="./assets/images/Fit n Fresh Logo.png" alt="fit-N-fresh logo">
+    <h1 id="FitNFreshIntro">Fit -N- Fresh</h1>
+    <nav class="nav-container">
+      <a class="nav" href="#Workouts">Workouts</a>
+      <a class="nav" href="#Recipes">Recipes</a>
+  
+    </nav>
+  </header>
+  <!--  -->
+  <main>
+    <!-- ------First Quote Section --------------- -->
+    <div id="motivQuotes1">
+      <h3>Sometimes being physically active can be boring, not to mention, the last thing you want to do at the end of a
+        long day.
+        On top of that, it’s tough to know exactly how to fuel your body for specific activities. <br> <br> Our application, Fit -N- Fresh solves these problems by guiding users to 6.5 million amazing pairings of both
+        activities
+        and fuel, to ensure that our bodies - our one and only life vessel - are as happy and healthy as they can be.
+      </h3>
+    </div>
+    <section class="workoutandrecipecards">
+      <!-- ----------WORKOUT SECTION------------- -->
+      <div class="workoutsection">
+        <h1>Let's Workout:</h1>
+        <br>
+        <section id="workoutResults"></section>
+        <form id="workoutForm" action="#">
+          <label for="bodyPart">Body Parts</label>
+          <select name="bodyPart" id="bodyPart">
+            <optgroup label="Upper Body">
+              <option value="neck">neck</option>
+              <option value="shoulders">Shoulders</option>
+              <option value="upper arms">Upper Arm</option>
+              <option value="back">Back</option>
+              <option selected="chest">Chest</option>
+              <option value="lower arms">Lower Arm</option>
+              <option value="upper arms">Upper Arm</option>
+            <optgroup label="lower Body">
+              <option value="lower legs">Lower Leg</option>
+              <option value="upper legs">Upper leg</option>
+            <optgroup label="Core">
+              <option value="waist">Waist</option>
+              <option value="cardio">Cardio</option>
+              </optgroup>
+          </select>
+          <br>
+
+          <label for="equipment">equipment</label>
+          <select name="equipment" id="equipment">
+
+            <optgroup label="Bulking">
+              <option value="barbell">barbell</option>
+              <option value="leverage machine">Leverage Machine</option>
+              <option value="dumbbell">dumbbell</option>
+              <option value="ez barbell">ez barbell</option>
+              <option value="olympic barbell">olympic barbell</option>
+              <option value="skierg machine">skierg machine</option>
+              <option value="sled machine">sled machine</option>
+              <option value="stability ball">stability ball</option>
+              <option value="trap bar">trap bar</option>
+              <option value="upper body ergometer">upper body ergometer</option>
+              <option value="cable">cable</option>
+            </optgroup>
+
+            <optgroup label="H.I.T">
+              <option value="kettlebell">kettlebell</option>
+              <option value="weighted">weighted</option>
+              <option value="bosu ball">bosu ball</option>
+              <option value="hammer">hammer</option>
+              <option value="rope">rope</option>
+              <option value="medicine ball">medicine ball</option>
+              <option value="band">band</option>
+              <option value="wheel roller">wheel roller</option>
+              <option value="resistance band">resistance band</option>
+              <option value="stability ball">Stability Ball</option>
+              <option value="tire">tire</option>
+            </optgroup>
+
+            <optgroup label="Cardio">
+              <option value="stationary bike">stationary bike</option>
+              <option value="stepmill machine">stepmill machine</option>
+              <option value="body weight">Body Weight</option>
+              <option value="elliptical machine">elliptical machine</option>
+            </optgroup>
+
+            <optgroup label="stretching">
+              <option value="roller">roller</option>
+
+            </optgroup>
+
+          </select>
+          <br>
+          <div class="widget" id="randWrkOuts">
+            <button type="submit">Get my workout!</button>
+          </div>
+        </form>
+      </div>
+      <!-- ---------END WORKOUT SECTION-------------- -->
+
+      <!-- ---------------------BEGIN RECIPE SECTION ---------------- -->
+      <div class="recipesection">
+        <!-- Will show / hide recipe section -->
+        <div class="unhideRecipeInfo">
+          <span id="recipeCard">
+            <h2 id="recipeTitle"></h2>
+            <img id="recipeImage" src="" alt="Recipe Image">
+            <ul id="ingredients"></ul>
+            <h4 id="instructions"></h4>
+          </span>
+        </div>
+        <h1>Let's Eat:</h1>
+        <form id="Food" action="#">
+          <label for="cuisine">Cuisine</label>
+          <select name="cuisine" id="cuisine">
+            <!-- <option name="cuisine" id="cuisine"> -->
+            <option selected="selected">American</option>
+            <option value="italian">Italian</option>
+            <option>Mexican</option>
+            <option>Indian</option>
+            <option>Chinese</option>
+          </select>
+          <br>
+          <label for="Intol">Intolerances</label>
+          <select name="files" id="intolerances">
+            <option>Gluten</option>
+            <option value="dairy">Dairy</option>
+            <option>Peanut</option>
+            <option>Seafood</option>
+            <option>Shellfish</option>
+            <option>Sesame</option>
+          </select>
+          <br>
+          <label for="diet">Diet</label>
+          <select name="diet" id="diet">
+            <option selected="selected">Omnivore</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option>Pescetarian</option>
+            <option>Vegan</option>
+          </select>
+          <br>
+        </form>
+        <div class="widget" id="randRecipes">
+          <button>Grab my Recipe!</button>
+        </div>
+      </div>
+      <br>
+      <!-- ---------------------END RECIPE SECTION ---------------- -->
+    </section>
+    <!-- ----------SECOND MOTIVATIONAL QUOTE SECTION--------------- -->
+    <div id="motivQuotes2">
+      <h3>"If we could give every individual the right amount of nourishment and exercise, not too little and not too
+        much, we would have the safest way to health." - Hippocrates.</h3>
+    </div>
+    <footer>
+      <h3>You Only Live Once - Don't F it Up &#x1F4AA; &#x1F966;</h3>
+    </footer>
+  </main>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- DayJS -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+  <!-- Script.JS -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
