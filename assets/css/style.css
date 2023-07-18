@@ -82,7 +82,7 @@ button:hover {
 /* Applies to workout card */
 .workoutsection {
     /* background: linear-gradient(to bottom, #b5ffe1, #65b891); */
-    border: solid 2px var(--spinach);
+    border: solid 4px var(--spinach);
     background-color: rgba(255, 255, 255, 0.9);
     color: var(--spinach);
     margin-top: 10px;
@@ -106,7 +106,7 @@ form {
 /* Applies to recipe card */
 .recipesection {
     /* background: linear-gradient(to bottom, #b5ffe1, #65b891); */
-    border: solid 2px var(--spinach);
+    border: solid 4px var(--spinach);
     background-color: rgba(255, 255, 255, 0.9);
     color: var(--spinach);
     margin-top: 10px;
@@ -131,30 +131,25 @@ form {
     color: var(--spinach);
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; /* Set the width to 100% */
 }
 
 #motivQuotes1 > .quote-wrapper {
     /* Add wrapper element */
     margin-left: 10px;
     margin-right: 10px;
+ 
 }
 
 #motivQuotes1 > .quote-wrapper > h4 {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 5px;
-    border: solid 2px var(--spinach);
+    border: solid 4px var(--spinach);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
+    padding: 5px;
 }
 
 #motivQuotes2 > .quote-wrapper {
@@ -166,7 +161,7 @@ form {
 #motivQuotes2 > .quote-wrapper > h4 {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 5px;
-    border: solid 2px var(--spinach);
+    border: solid 4px var(--spinach);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -179,11 +174,6 @@ form {
     color: var(--spinach);
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; /* Set the width to 100% */
 }
 
 
