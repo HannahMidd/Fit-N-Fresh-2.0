@@ -20,7 +20,7 @@ body {
 .header {
     background-color: rgba(255, 255, 255, 0.9);
     color: var(--spinach);
-    height: 120px;
+    height: 110px;
     border: solid 2px var(--spinach);
     margin-left: 10px;
     margin-right: 10px;
@@ -46,7 +46,7 @@ body {
 
 /* Applies to nav bar items */
 .nav {
-    color: var(--guava);
+    color: var(--spinach);
     margin: 5px;
     font-size: 1.3em;
 }
@@ -54,6 +54,13 @@ body {
 /* Applies to logo in top left  */
 #logo {
     width: 190px;
+    padding: 5px;
+    height: 100px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 /* Applies to buttons */
