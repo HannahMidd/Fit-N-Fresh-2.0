@@ -15,10 +15,10 @@ body {
 }
 /* Applies to header color and size */
 .header {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--guava);
     color: var(--spinach);
     height: 75px;
-    border: solid 4px var(--spinach);
+    border: solid 4px var(--guava);
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -45,7 +45,7 @@ body {
 
 /* Applies to nav bar items */
 .nav {
-    color: var(--spinach);
+    color: var(--leaf);
     margin: 5px;
     font-size: 1.3em;
 }
@@ -137,7 +137,6 @@ form {
     /* Add wrapper element */
     margin-left: 10px;
     margin-right: 10px;
- 
 }
 
 #motivQuotes1 > .quote-wrapper > h4 {
@@ -175,10 +174,6 @@ form {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
-
-
-
 
 .unhideRecipeInfo {
     display: none;
