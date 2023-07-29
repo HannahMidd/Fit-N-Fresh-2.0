@@ -1,17 +1,18 @@
 :root {
     --lettuce: #662613;
-    --leaf: #8f301f;
+    --leaf: #a061a8;
     --grass: #681717;
-    --guava: #d19b5d;
-    --spinach: #d89259;
+    --guava: #d38e66;
+    --spinach: #d38e66;
 }
 /* Applies to entire main section */
-body {
-    background-image: url('../images/fruittty.avif'); /* First image */
-    background-size: cover; /* Cover the entire background area */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Fix the background image to the viewport */
+.photo-wrap {
+    background-image: url('../images/fruittty.avif'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 90vh;
 }
 /* Applies to header color and size */
 .header {
@@ -19,13 +20,15 @@ body {
     color: var(--spinach);
     height: 75px;
     border: solid 4px var(--guava);
-    margin-left: 10px;
-    margin-right: 10px;
+
+}
+
+.secondary-photo {
+    background-image: url('../images/foodonside.avif');
 }
 
 #FitNFreshIntro {
     position: relative;
-    top: -80px;
     left: 180px;
     margin-left: 10px;
     margin-right: 10px;
@@ -45,7 +48,7 @@ body {
 
 /* Applies to nav bar items */
 .nav {
-    color: var(--leaf);
+    color: whitesmoke;
     margin: 5px;
     font-size: 1.3em;
 }
@@ -82,7 +85,7 @@ button:hover {
 /* Applies to workout card */
 .workoutsection {
     /* background: linear-gradient(to bottom, #b5ffe1, #65b891); */
-    border: solid 4px var(--spinach);
+    border: solid 4px var(--guava);
     background-color: rgba(255, 255, 255, 0.9);
     color: var(--spinach);
     margin-top: 10px;
@@ -106,7 +109,7 @@ form {
 /* Applies to recipe card */
 .recipesection {
     /* background: linear-gradient(to bottom, #b5ffe1, #65b891); */
-    border: solid 4px var(--spinach);
+    border: solid 4px var(--guava);
     background-color: rgba(255, 255, 255, 0.9);
     color: var(--spinach);
     margin-top: 10px;
@@ -128,8 +131,8 @@ form {
 /* Applies to motivational quotes */
 #motivQuotes1 {
     text-align: center;
-    color: var(--spinach);
-    margin-top: 30px;
+    color: var(--guava);
+    /* margin-top: 30px; */
     margin-bottom: 30px;
 }
 
@@ -142,7 +145,7 @@ form {
 #motivQuotes1 > .quote-wrapper > h4 {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 5px;
-    border: solid 4px var(--spinach);
+    border: solid 4px var(--guava);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -160,7 +163,7 @@ form {
 #motivQuotes2 > .quote-wrapper > h4 {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 5px;
-    border: solid 4px var(--spinach);
+    border: solid 4px var(--guava);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
